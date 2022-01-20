@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.app{
+  
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'leftside main';
+  grid-gap: 10px;
+  grid-template-columns: 10vw auto;
+  grid-template-rows: 10vh calc(90vh - 30px)  ;
+  background-color: #2196F3;
+  padding: 10px;
+
+  div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+}
+.header{
+  grid-area: header;
+}
+.leftside{
+  grid-area: leftside;
+}
+.main{
+  grid-area: main;
+}
+.allmails{
+  height: 100%;
+  overflow-y: auto;
+}
+.newMail{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+
+}
+input { 
+  text-align: center; 
+}
+textarea { 
+  text-align: center; 
+}
+// top-bottom right-left
+.item{
+  display: flex;
+  padding: 1px 20px;
+  justify-content: space-around;
+  button{
+    border: none;
+    background: none;
+  }
+
+}
+button:hover{
+  color: blue;
+  cursor: pointer;
+}
+.fullmail{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}

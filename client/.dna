@@ -1,0 +1,45 @@
+=====Done======
+
+comp:
+  1.Header (searchMail)
+  2. LeftSide (NewMail btn)
+  4. Main (Routers)
+  5. Allmails
+  6. Item
+  7. Fullmail
+  6. NewMail
+
+========ToDo============
+
+----------App---------
+ jsx: Header , Main , LeftSide
+----------Header---------
+ state: searchInp , 
+ functions: 
+ jsx: 
+----------LeftSide---------
+ pros:
+ state:
+ functions:
+ jsx: NewMail
+----------Main---------
+ jsx: Allmails , NewMail , Fullmai
+----------Allmails---------
+ pros: 
+ state: mails
+ functions: get fetch (/mails)
+ jsx: Item
+----------Item---------
+ pros: mail
+ state:
+ functions: 
+ jsx: Fullmail
+----------Fullmail---------
+ pros: mail
+ state:
+ functions:
+ jsx:
+----------NewMail---------
+ state: inps
+ functions: post fetch
+ jsx: Allmails
